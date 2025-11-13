@@ -10,8 +10,11 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
+                // Clean workspace and clone your repo
+                sh 'rm -rf *'
                 git branch: 'main',
                     url: 'https://github.com/chsatya421-hub/vintekitFrontEnd.git'
+                sh 'ls -la'
             }
         }
 
@@ -27,8 +30,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                // No real tests for static HTML, but keep a placeholder
-                sh 'echo "No tests for static site yet"'
+                sh 'echo "No tests yet for static site"'
             }
         }
 
