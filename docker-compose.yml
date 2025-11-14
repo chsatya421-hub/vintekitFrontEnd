@@ -31,7 +31,9 @@ services:
     ports:
       - "9115:9115"
     volumes:
-      - ./blackbox.yml:/etc/blackbox_exporter/config.yml
+      - ./blackbox:/etc/blackbox_exporter
+    command:
+      - "--config.file=/etc/blackbox_exporter/config.yml"
 
   prometheus:
     image: prom/prometheus:latest
