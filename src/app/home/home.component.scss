@@ -1,0 +1,42 @@
+.cards-section {
+  padding: 3rem 1rem 4rem;
+
+  .home-card {
+    height: 100%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;        // **center the title + content**
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+  }
+
+  mat-card-header {
+    justify-content: center;   // centers the whole header block
+    text-align: center;
+  }
+
+  mat-card-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+  }
+
+  mat-card-content {
+    flex-grow: 1;              // **content fills the card fully**
+    display: flex;
+    align-items: center;       // vertically centers inside
+    justify-content: center;   // horizontally centers inside
+    text-align: center;
+  }
+
+  .card-text {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    white-space: pre-line;     // keeps your text formatting
+    text-align: center;
+  }
+}

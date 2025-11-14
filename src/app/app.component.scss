@@ -1,0 +1,93 @@
+.main-toolbar {
+  background: #6a3bcc; // purple similar to screenshot
+  color: #ffffff;
+  padding: 0;
+  min-height: 60px;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-box {
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+
+  img {
+    height: 40px;
+    width: auto;
+  }
+}
+.nav-links {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-link {
+  color: #f5f1ff;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 0;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    color: #ffffff;
+  }
+
+  &.active {
+    color: #ffffff;
+    font-weight: 700;       // bolder
+  }
+
+  &.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -4px;           // little bar below text
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 2px;
+  }
+}
+
+// .nav-links {
+//   flex: 1;
+//   display: flex;
+//   justify-content: space-evenly; // spreads items across the bar
+//   align-items: center;
+// }
+
+// .nav-link {
+//   color: #f5f1ff;      // slightly lighter than pure white
+//   font-weight: 600;
+//   text-decoration: none;
+//   font-size: 16px;
+//   padding: 10px 0;
+//   cursor: pointer;
+
+//   &:hover {
+//     color: #ffffff;
+//   }
+
+//   &.active {
+//     color: #ffffff;
+//   }
+// }
+
+/* Optional: remove default mat-toolbar shadow if any */
+.mat-toolbar {
+  box-shadow: none;
+}
+
+.app-footer {
+  background: #6a3bcc;
+  border-top: 1px solid #e0e0e0;
+}

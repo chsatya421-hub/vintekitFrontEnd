@@ -5,7 +5,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: my-static-site:${BUILD_NUMBER:-latest}
-    container_name: my-static-site
+    image: vintekit-frontend:${BUILD_NUMBER:-latest}
+    container_name: vintekit-frontend
     ports:
-      - "8080:80"
+      # Jenkins is on 8080, so use 9090 for the app
+      - "9090:80"

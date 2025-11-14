@@ -1,0 +1,55 @@
+<mat-toolbar class="main-toolbar">
+  <div class="nav-wrapper">
+    <!-- Logo -->
+    <div class="logo-box">
+      <img src="assets/logo.jpg" alt="Logo">
+    </div>
+
+    <!-- Nav links -->
+    <nav class="nav-links">
+  <a
+    routerLink=""
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    class="nav-link"
+  >
+    Home
+  </a>
+
+  <a routerLink="/about" routerLinkActive="active" class="nav-link">
+    About
+  </a>
+
+  <a routerLink="/services" routerLinkActive="active" class="nav-link">
+    Services
+  </a>
+
+  <a routerLink="/technology" routerLinkActive="active" class="nav-link">
+    Technology
+  </a>
+
+  <a routerLink="/process" routerLinkActive="active" class="nav-link">
+    Our Process
+  </a>
+
+  <a routerLink="/careers" routerLinkActive="active" class="nav-link">
+    Careers
+  </a>
+
+  <a routerLink="/contact" routerLinkActive="active" class="nav-link">
+    Contact
+  </a>
+</nav>
+
+  </div>
+</mat-toolbar>
+
+<main class="app-main">
+  <div class="container py-4">
+    <router-outlet></router-outlet>
+  </div>
+</main>
+
+<footer class="app-footer text-center py-3">
+  <small>&copy; All rights reserved for Vintek LLC 2020</small>
+</footer>

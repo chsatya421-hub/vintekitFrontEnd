@@ -1,0 +1,26 @@
+<section class="hero text-center">
+  <!-- change src to your actual image name -->
+  <img
+    src="assets/Home.png"
+    alt="Our People"
+    class="hero-image img-fluid"
+  />
+</section>
+
+<!-- 3 cards row -->
+<section class="cards-section">
+  <div class="container-fluid">
+    <div class="row g-4 justify-content-center">
+      <div class="col-12 col-md-4" *ngFor="let card of cards">
+        <mat-card class="home-card">
+          <mat-card-header>
+            <mat-card-title>{{ card.title }}</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p class="card-text" [innerText]="card.text"></p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</section>
